@@ -5,12 +5,16 @@
     <form action="http://localhost:5000/result" method="post">
         {{ form.hidden_tag() }}
         <p>
-            {{ form.lat.label }}<br>
-            {{ form.lat(size=32) }}
+            {{ form.start.label }}<br>
+            {{ form.start(size=32) }}
         </p>
         <p>
-            {{ form.long.label }}<br>
-            {{ form.long(size=32) }}
+            {{ form.end.label }}<br>
+            {{ form.end(size=32) }}
+        </p>
+        <p>
+            {{ form.price.label }}<br>
+            {{ form.price(size=32) }}
         </p>
         <p><input type = 'submit' value = "submit" /></p>
     </form>

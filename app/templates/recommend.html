@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>Recommended Restaurants</h1>
+    <head>
+        <style>
+            body {background-color: white;}
+            p {color: grey;}
+            label {border: 1px solid #ccc; padding: 10px; margin-left: 25px; display: block; font: "Raleway";}
+            label: hover {background:#eee; cursor:pointer;}
+        </style>
+    </head>
+   <div><p>
+      {% for thing in result %}
+       <label>
+        {{thing}}
+       </label>
+   {% endfor%}
+       </p></div>
+{% endblock %}

@@ -9,17 +9,12 @@
         </style>
     </head>
    <body>
-   <form action="http://localhost:5000/recommend" method="get">
    {% for thing in result %}
    <div><p>
-       <input type="checkbox" id="id_{{thing}}" name="picked" value="{{thing}}"/>
-       <label for="id_{{thing}}">{{thing}}</label></p>
-   </div>
+       <label>{{thing}}</label></p></div>
    {% endfor%}
 
-
    <p><input type = 'submit' value = "submit" /></p>
-    </form>
    </body>
 </html>
 
